@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update user</title>
+</head>
+<body>
+    <h2>Update Employee</h2>
+
+<form method="post">
+{% csrf_token %}
+<input name="name" value="{{ emp.name }}"><br>
+<input name="email" value="{{ emp.email }}"><br>
+<input name="department" value="{{ emp.department }}"><br>
+<input name="salary" value="{{ emp.salary }}"><br>
+<input name="mobile" value="{{ emp.mobile }}"><br>
+<button>Update</button>
+</form>
+
+</body>
+</html>
